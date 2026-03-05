@@ -4,7 +4,7 @@ from controllers.login_controller import LoginController
 from PyQt6.QtCore import pyqtSignal
 from PyQt6.QtGui import QPalette
 
-class Login(QtWidgets.QMainWindow):
+class Login(QtWidgets.QDialog):
     login_successful = pyqtSignal()
     def __init__(self):
         super().__init__()
@@ -15,7 +15,7 @@ class Login(QtWidgets.QMainWindow):
     def apply_theme(self):
         is_dark = self.palette().color(QPalette.ColorRole.Window).lightness() < 128
 
-class Selling(QtWidgets.QDialog):
+class Selling(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("./views/flower_shop_main.ui", self)
