@@ -14,7 +14,14 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(247, 246, 255);</string>
+   <string notr="true">.menuLateral{
+border-radius: 20px;
+border-bottom: 1px solid rgb(25, 0, 127);
+}
+
+.menuLateral:hover{
+background-color: rgb(85, 0, 127);
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="frame">
@@ -82,11 +89,17 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(246, 244, 255);</string>
        </property>
        <property name="text">
         <string>Flower</string>
+       </property>
+       <property name="class" stdset="0">
+        <string>menuLateral</string>
        </property>
       </widget>
      </item>
@@ -98,6 +111,9 @@
        <property name="text">
         <string>Vase</string>
        </property>
+       <property name="class" stdset="0">
+        <string>menuLateral</string>
+       </property>
       </widget>
      </item>
      <item>
@@ -107,6 +123,9 @@
        </property>
        <property name="text">
         <string>Leaf</string>
+       </property>
+       <property name="class" stdset="0">
+        <string>menuLateral</string>
        </property>
       </widget>
      </item>
@@ -118,6 +137,9 @@
        <property name="text">
         <string>Ribbon</string>
        </property>
+       <property name="class" stdset="0">
+        <string>menuLateral</string>
+       </property>
       </widget>
      </item>
      <item>
@@ -128,6 +150,9 @@
        <property name="text">
         <string>Card</string>
        </property>
+       <property name="class" stdset="0">
+        <string>menuLateral</string>
+       </property>
       </widget>
      </item>
      <item>
@@ -137,6 +162,9 @@
        </property>
        <property name="text">
         <string>Gfit</string>
+       </property>
+       <property name="class" stdset="0">
+        <string>menuLateral</string>
        </property>
       </widget>
      </item>
@@ -571,8 +599,17 @@
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QPushButton" name="pushButton_7">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid #fcfcfc;
+background-color: #1d1d1d;
+padding: 5px;</string>
+       </property>
        <property name="text">
         <string>Undo</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../../Downloads/undo_24dp_717198_FILL0_wght400_GRAD0_opsz24.png</normaloff>../../../../Downloads/undo_24dp_717198_FILL0_wght400_GRAD0_opsz24.png</iconset>
        </property>
       </widget>
      </item>
@@ -596,6 +633,10 @@
       <widget class="QPushButton" name="pushButton_8">
        <property name="text">
         <string>Redo</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../../Downloads/redo_24dp_717198_FILL0_wght400_GRAD0_opsz24.png</normaloff>../../../../Downloads/redo_24dp_717198_FILL0_wght400_GRAD0_opsz24.png</iconset>
        </property>
       </widget>
      </item>
